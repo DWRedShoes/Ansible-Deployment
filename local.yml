@@ -10,3 +10,11 @@
         - htom
         - tmux
         - vim-nox
+
+  - name: Install Snaps
+    community.general.snap:
+      name:
+        - bitwarden
+        - chromium
+        - thunderbird
+        - pdfarranger
