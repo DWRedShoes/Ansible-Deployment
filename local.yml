@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  connection: local
+  become: true
+
+  tasks:
+  - name: Install Ubuntu Packages
+    package:
+      name:
+        - htom
+        - tmux
+        - vim-nox
