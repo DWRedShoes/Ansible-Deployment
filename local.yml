@@ -7,7 +7,6 @@
   - name: Install Ubuntu Packages
     package:
       name:
-        - htom
         - tmux
         - vim-nox
 
@@ -16,5 +15,6 @@
       name:
         - bitwarden
         - chromium
+        - htop
         - thunderbird
         - pdfarranger
