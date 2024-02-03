@@ -38,7 +38,7 @@
 
   - name: Install Flatpaks
     community.general.flatpak:
-      name: 
+      name:
         - net.davidotek.pupgui2
         - md.obsidian.Obsidian
 
