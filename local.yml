@@ -38,9 +38,12 @@
 
   - name: Install Flatpaks
     community.general.flatpak:
-      name:
-        - net.davidotek.pupgui2
-        - md.obsidian.Obsidian
+      name: net.davidotek.pupgui2
+
+  - name: Install Flatpaks
+    community.general.flatpak:
+      name: md.obsidian.Obsidian
+
 
   - name: Set Bashrc file
     ansible.builtin.copy:
