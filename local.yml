@@ -39,3 +39,10 @@
   - name: Install Flatpaks
     community.general.flatpak:
       name: net.davidotek.pupgui2
+  - name: Set Bashrc file
+  ansible.builtin.copy:
+    src: files/bashrc
+    dest: ~/.bashrc
+    owner: derek
+    group: derek
+    mode: u=rw,g=r,o=r
