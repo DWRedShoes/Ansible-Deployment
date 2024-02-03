@@ -15,6 +15,10 @@
   - name: Install Ubuntu Packages
     package:
       name:
+        - flatpak
+        - gnome-software
+        - gnome-software-plugin-flatpak
+        - steam
         - tmux
         - vim-nox
 
@@ -28,3 +32,13 @@
         - nvtop
         - thunderbird
         - pdfarranger
+
+  - name: Add the Gnome flatpak remote to the system installation
+    community.general.flatpak_remote:
+      name: gnome
+      state: present
+      flatpakrepo_url: https://sdk.gnome.org/gnome-apps.flatpakrepo
+
+  - name: Install Flatpaks
+    community.general.flatpak:
+      name: net.davidotek.pupgui2
