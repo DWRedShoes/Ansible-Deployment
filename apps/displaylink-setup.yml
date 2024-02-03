@@ -1,0 +1,10 @@
+---
+- name: Install a .deb package from the internet
+  ansible.builtin.apt:
+    deb: https://www.synaptics.com/sites/default/files/Ubuntu/pool/stable/main/all/synaptics-repository-keyring.deb
+
+
+- name: Update repositories cache and install "foo" package
+  ansible.builtin.apt:
+    name: displaylink-driver
+    update_cache: yes

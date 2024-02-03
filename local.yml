@@ -34,6 +34,8 @@
 
   - include_tasks: flatpak/flatpak-setup.yml
 
+  - include_tasks: apps/displaylink-setup.yml
+
   - name: Install Flatpaks
     community.general.flatpak:
       name: net.davidotek.pupgui2
