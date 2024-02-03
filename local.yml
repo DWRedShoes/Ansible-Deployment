@@ -43,7 +43,8 @@
   - name: Set Bashrc file
     ansible.builtin.copy:
       src: files/bashrc
-      dest: ~/.bashrc
+      dest: /home/derek/.bashrc
       owner: derek
       group: derek
       mode: u=rw,g=r,o=r
+      follow: yes
