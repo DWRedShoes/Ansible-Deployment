@@ -29,7 +29,6 @@
         - htop
         - launcher-ot-minecraft
         - nvtop
-        - obsidian
         - thunderbird
         - pdfarranger
 
@@ -39,7 +38,9 @@
 
   - name: Install Flatpaks
     community.general.flatpak:
-      name: net.davidotek.pupgui2
+      name: 
+        - net.davidotek.pupgui2
+        - md.obsidian.Obsidian
 
   - name: Set Bashrc file
     ansible.builtin.copy:
