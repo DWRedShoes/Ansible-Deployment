@@ -61,6 +61,10 @@
     community.general.flatpak:
       name: org.mozilla.Thunderbird
 
+  - name: Install Flatpakl - Kdenlivev
+    community.general.flatpak:
+      name: org.kde.kdenlive
+
   - name: Set Bashrc file
     ansible.builtin.copy:
       src: files/bashrc
