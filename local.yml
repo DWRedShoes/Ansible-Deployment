@@ -71,6 +71,10 @@
     community.general.flatpak:
       name: org.kde.kdenlive
 
+  - name: Install Flatpak - dconf Editor
+    community.general.flatpak:
+      name: ca.desrt.dconf-editor
+
   - name: Set Bashrc file
     ansible.builtin.copy:
       src: files/bashrc
