@@ -83,3 +83,5 @@
       group: derek
       mode: u=rw,g=r,o=r
       follow: yes
+
+  - include_tasks: configs/ubuntu-config.yml
