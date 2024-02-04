@@ -45,7 +45,7 @@
 
   - name: Install Flatpak - RSS Guard
     community.general.flatpak:
-      - name: io.github.martinrotter.rssguard
+      name: io.github.martinrotter.rssguard
 
   - name: Install Flatpak - ProtonUP QT
     community.general.flatpak:
