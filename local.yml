@@ -49,6 +49,9 @@
     community.general.flatpak:
       name: md.obsidian.Obsidian
 
+  - name: Install Flatpak - Boxes
+    community.general.flatpak:
+      name: org.gnome.Boxes
 
   - name: Set Bashrc file
     ansible.builtin.copy:
