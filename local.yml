@@ -38,7 +38,9 @@
 
   - name: Install Flatpaks
     community.general.flatpak:
-      name: net.davidotek.pupgui2
+      name:
+        - net.davidotek.pupgui2
+        - com.obsproject.Studio
 
   - name: Install Flatpaks
     community.general.flatpak:
