@@ -12,10 +12,6 @@
   - name: Enable i386 architecture
     command: dpkg --add-architecture i386
 
-  -  name: Enable multiverse repository
-     apt_repository:
-       repo: multiverse
-
   - name: Install Ubuntu Packages
     package:
       name:
