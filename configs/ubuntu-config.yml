@@ -12,4 +12,4 @@
 - name: Enable Dark Mode
   community.general.dconf:
     key: '/org/gnome/desktop/interface/color-scheme'
-    value: 'prefer-dark'
+    value: "'prefer-dark'"
