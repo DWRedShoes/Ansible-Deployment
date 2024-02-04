@@ -36,13 +36,16 @@
 
   - include_tasks: apps/displaylink-setup.yml
 
-  - name: Install Flatpaks
+  - name: Install Flatpak - ProtonUP QT
     community.general.flatpak:
-      name:
-        - net.davidotek.pupgui2
-        - com.obsproject.Studio
+      name: net.davidotek.pupgui2
 
-  - name: Install Flatpaks
+  - name: Install Flatpak - OBS Studio
+    community.general.flatpak:
+      name: com.obsproject.Studio
+
+
+  - name: Install Flatpak - Obsidian
     community.general.flatpak:
       name: md.obsidian.Obsidian
 
