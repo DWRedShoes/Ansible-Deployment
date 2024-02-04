@@ -7,7 +7,7 @@
 - name: Enable screen lock
   community.general.dconf:
     key: '/org/gnome/desktop/screensaver/lock-delay'
-    value: '5'
+    value: '0'
 
 - name: Enable Dark Mode
   community.general.dconf:
