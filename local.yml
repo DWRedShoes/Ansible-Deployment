@@ -35,7 +35,7 @@
     community.general.snap:
       name:
         - thunderbird
-    state: absent
+      state: absent
 
   - include_tasks: flatpak/flatpak-setup.yml
 
