@@ -5,8 +5,32 @@
     key: '/org/gnome/desktop/screensaver/lock-enabled'
     value: 'true'
 
+- name: Enable Lock Delay
+  become_user: derek
+  dconf:
+    key: '/org/gnome/desktop/screensaver/lock-delay'
+    value: '10'
+
 - name: Enable Dark Mode
   become_user: derek
   dconf:
     key: '/org/gnome/desktop/interface/color-scheme'
     value: "'prefer-dark'"
+
+- name: Clock Show Seconds
+  become_user: derek
+  dconf:
+    key: '/org/gnome/desktop/interface/clock-show-seconds'
+    value: 'true'
+
+- name: Clock Military Time
+  become_user: derek
+  dconf:
+    key: '/org/gnome/desktop/interface/clock-format'
+    value: "'24h'"
+
+- name: Clock Show Weekday
+  become_user: derek
+  dconf:
+    key: '/org/gnome/desktop/interface/clock-show-weekday'
+    value: 'true'
