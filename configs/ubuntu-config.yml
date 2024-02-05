@@ -17,6 +17,13 @@
     key: '/org/gnome/desktop/session/idle-delay'
     value: 'uint32 300'
 
+- name: Enable Show Battery Percentage
+  become_user: derek
+  dconf:
+    key: '/org/gnome/desktop/interface/show-battery-percentage'
+    value: 'true'
+
+
 - name: Enable Dark Mode
   become_user: derek
   dconf:
