@@ -16,6 +16,7 @@
     package:
       name:
         - ubuntu-restricted-extras
+        - chrome-gnome-shell
         - gnome-software
         - gnome-software-plugin-flatpak
         - gnome-tweaks
