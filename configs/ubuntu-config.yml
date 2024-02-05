@@ -34,3 +34,9 @@
   dconf:
     key: '/org/gnome/desktop/interface/clock-show-weekday'
     value: 'true'
+
+- name: Title Bar Options
+  become_user: derek
+  dconf:
+    key: '/org/gnome/desktop/wm/preferences/button-layout'
+    value: ':minimize,maximize,close'
