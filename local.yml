@@ -87,4 +87,13 @@
       mode: u=rw,g=r,o=r
       follow: yes
 
+  - name: Allow Hibernate in Gnome Menu
+    ansible.builtin.copy:
+      src: files/com.ubuntu.enable-hibernate.pkla
+      dest: /etc/polkit-1/localauthority/50-local.d/com.ubuntu.enable-hibernate.pkla
+      owner: root
+      group: root
+      mode: u=rw,g=r,o=r
+
+
   - include_tasks: configs/ubuntu-config.yml
