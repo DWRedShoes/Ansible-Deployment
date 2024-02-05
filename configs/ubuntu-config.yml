@@ -39,4 +39,4 @@
   become_user: derek
   dconf:
     key: '/org/gnome/desktop/wm/preferences/button-layout'
-    value: ':minimize,maximize,close'
+    value: "':minimize,maximize,close'"
