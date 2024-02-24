@@ -33,6 +33,8 @@
         - chromium
         - htop
         - launcher-ot-minecraft
+        - logseq
+        - nextcloud-desktop-client
         - nvtop
         - pdfarranger
 
@@ -57,10 +59,6 @@
   - name: Install Flatpak - OBS Studio
     community.general.flatpak:
       name: com.obsproject.Studio
-
-  - name: Install Flatpak - Obsidian
-    community.general.flatpak:
-      name: md.obsidian.Obsidian
 
   - name: Install Flatpak - Boxes
     community.general.flatpak:
