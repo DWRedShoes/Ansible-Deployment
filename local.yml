@@ -70,13 +70,17 @@
     community.general.flatpak:
       name: org.mozilla.Thunderbird
 
-  - name: Install Flatpakl - Kdenlivev
+  - name: Install Flatpak - Kdenlivev
     community.general.flatpak:
       name: org.kde.kdenlive
 
   - name: Install Flatpak - dconf Editor
     community.general.flatpak:
       name: ca.desrt.dconf-editor
+
+  - name: Install Flatpak - Gnome Extension Manager
+    community.general.flatpak:
+      name: com.mattjakeman.ExtensionManager
 
   - name: Set Bashrc file
     ansible.builtin.copy:
